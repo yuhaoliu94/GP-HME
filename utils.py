@@ -55,7 +55,7 @@ def get_flags():
     flags.DEFINE_string('likelihood_type', "standard", 'Optimizer')
     flags.DEFINE_string('kernel_type', "RBF", 'Types of different kernels')
     flags.DEFINE_integer('kernel_arccosine_degree', 1, 'Degree parameter of arc-cosine kernel')
-    flags.DEFINE_integer('ard_type', 0, 'Using ISO-T, ISO-L, or ARD-N')
+    flags.DEFINE_integer('ard_type', 0, 'Using 0: ISO-N, 1: ISO-L, or 2: NIS-N')
     flags.DEFINE_boolean('local_reparam', False, 'Using the local reparameterization trick')
     flags.DEFINE_integer('q_Omega_fixed', 0, 'Number of iterations to keep posterior over Omega fixed')
     flags.DEFINE_integer('theta_fixed', 0, 'Number of iterations to keep theta fixed')
