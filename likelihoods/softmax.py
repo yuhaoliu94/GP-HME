@@ -3,10 +3,6 @@ from . import likelihood
 import utils
 
 class Softmax(likelihood.Likelihood):
-    """
-    Implements softmax likelihood for multi-class classification
-    """
-#    def __init__(self):
 
     def log_cond_prob(self, output, latent_val):
         return tf.reduce_sum(output * latent_val, 2) - utils.logsumexp(latent_val, 2)
