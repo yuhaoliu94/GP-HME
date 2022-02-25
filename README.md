@@ -27,11 +27,11 @@ The code implements variational inference for Gaussian Process Decision Tree (GP
 * --local_reparam       &emsp; &emsp; &nbsp; Use the local reparameterization trick
 * --q_Omega_fixed       &emsp; &ensp; Number of iterations to keep posterior of Omega fixed at the beginning
 
-## Examples
+## EXAMPLES
 
 Here are two examples to run the GPDT model on regression and classification tasks:
 
-### Regression
+### REGRESSION
 ```
 python experiments/sdt_rff_regression_gpu.py --seed=12345 --dataset=ABA --fold=1 --q_Omega_fixed=1000 \
 --theta_fixed=4000 --ard_type=0 --optimizer=adam --h_tree=2 --learning_rate=0.001 --n_rff=50 \
@@ -39,7 +39,7 @@ python experiments/sdt_rff_regression_gpu.py --seed=12345 --dataset=ABA --fold=1
 --kernel_type=RBF
 ```
 
-### Classification
+### CLASSIFICATION
 ```
 python experiments/sdt_rff_classification_gpu.py --seed=12345 --dataset=OPT --fold=1 --q_Omega_fixed=1000 \
 --theta_fixed=4000 --ard_type=0 --optimizer=adam --h_tree=2 --learning_rate=0.001 --n_rff=100 \
