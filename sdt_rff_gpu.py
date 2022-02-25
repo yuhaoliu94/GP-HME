@@ -139,6 +139,8 @@ class SdtRff(object):
         ## Initialize the session
         gpu_options = tf.GPUOptions(allow_growth=True)
         self.session = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
+        
+        # self.session = tf.Session() # If launched on CPU, please simply use this line
 
     ## Definition of a prior for Omega - which depends on the lengthscale of the covariance function
     def get_prior_Omega(self, log_lengthscale):
