@@ -33,14 +33,16 @@ Here are two examples to run the GPDT model on regression and classification tas
 
 ### Regression
 ```
-python experiments/sdt_rff_regression_gpu.py --seed=12345 --dataset=ABA --fold=1 --q_Omega_fixed=1000 --theta_fixed=4000 \
---ard_type=0 --optimizer=adam --h_tree=2 --learning_rate=0.001 --n_rff=50 --batch_size=200 --mc_train=100 --mc_test=100 \
---n_iterations=100000 --display_step=250 --duration=60 --kernel_type=RBF
+python experiments/sdt_rff_regression_gpu.py --seed=12345 --dataset=ABA --fold=1 --q_Omega_fixed=1000 \
+--theta_fixed=4000 --ard_type=0 --optimizer=adam --h_tree=2 --learning_rate=0.001 --n_rff=50 \
+--batch_size=200 --mc_train=100 --mc_test=100 --n_iterations=100000 --display_step=250 --duration=60 \
+--kernel_type=RBF
 ```
 
 ### Classification
 ```
-python experiments/sdt_rff_classification_gpu.py --seed=12345 --dataset=OPT --fold=1 --q_Omega_fixed=1000 --theta_fixed=4000 \
---ard_type=0 --optimizer=adam --h_tree=2 --learning_rate=0.001 --n_rff=100 --batch_size=200 --mc_train=100 --mc_test=100 \
---n_iterations=100000 --display_step=250 --duration=60 --kernel_type=arccosine
+python experiments/sdt_rff_classification_gpu.py --seed=12345 --dataset=OPT --fold=1 --q_Omega_fixed=1000 \
+--theta_fixed=4000 --ard_type=0 --optimizer=adam --h_tree=2 --learning_rate=0.001 --n_rff=100 \
+--batch_size=200 --mc_train=100 --mc_test=100 --n_iterations=100000 --display_step=250 --duration=60 \
+--kernel_type=arccosine
 ```
