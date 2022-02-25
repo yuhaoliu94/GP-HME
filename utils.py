@@ -52,7 +52,7 @@ def get_flags():
     flags.DEFINE_integer('n_rff', 10, 'Number of random features for each layer')
     flags.DEFINE_integer('h_tree', 1, 'Number of layers')
     flags.DEFINE_string('optimizer', "adagrad", 'Optimizer')
-    flags.DEFINE_string('likelihood_type', "standard", 'Optimizer')
+    flags.DEFINE_string('likelihood_type', "standard", 'Whether the expert prefers only one class')
     flags.DEFINE_string('kernel_type', "RBF", 'Types of different kernels')
     flags.DEFINE_integer('kernel_arccosine_degree', 1, 'Degree parameter of arc-cosine kernel')
     flags.DEFINE_integer('ard_type', 0, 'Using 0: ISO-N, 1: ISO-L, or 2: NIS-N')
