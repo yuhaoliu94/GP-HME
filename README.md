@@ -4,7 +4,8 @@ Currently the code is structured under Tensorflow 1.14.0. If GPUs are not availa
 
 ## FLAGS
 
-The code implements variational inference for Gaussian Process Decision Tree (GPDT) approximated using random Fourier features. The code accepts the following options:
+The code implements variational inference for Gaussian Process-Gated Hierarchical Mixture of
+Experts (GPHME) approximated using random Fourier features. The code accepts the following options:
 
 
 * --fold                &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Fold of dataset
@@ -29,7 +30,7 @@ The code implements variational inference for Gaussian Process Decision Tree (GP
 
 ## EXAMPLES
 
-Here are two examples to run the GPDT model on regression and classification tasks:
+Here are two examples to run the GPHME model on regression and classification tasks:
 
 ### REGRESSION
 ```
