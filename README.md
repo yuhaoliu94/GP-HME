@@ -1,6 +1,12 @@
 # README
 
-Currently the code is structured under Tensorflow 1.14.0. If GPUs are not available, please directly remove the GPU setting when initialize the session.
+This repository contains code for the Gaussian Process-Gated Hierarchical Mixtures of Experts (GP-HME) proposed in the paper:
+
+Yuhao Liu, Marzieh Ajirak, and Petar M. Djurić. "Gaussian process-gated hierarchical mixtures of experts." IEEE Transactions on Pattern Analysis and Machine Intelligence (2024).
+
+The work is [https://ieeexplore.ieee.org/abstract/document/10480265](https://ieeexplore.ieee.org/abstract/document/10480265) or in arXiv [https://arxiv.org/abs/2302.04947](https://arxiv.org/abs/2302.04947).
+
+06/28/2024 - Currently, the code is structured under Tensorflow 1.14.0. If GPUs are not available, please directly remove the GPU setting when initialize the session.
 
 ## FLAGS
 
